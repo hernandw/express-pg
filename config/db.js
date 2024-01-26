@@ -11,12 +11,12 @@ const pool = new Pool({
     allowExitOnIdle: true
 })
 
-const getData = async () => {
-    const res = await pool.query("Select NOW()")
-    console.log(res.rows)
+/* const getData = async () => {
+    const {rows} = await pool.query("Select NOW()")
+    console.log(rows)
     
 }
 
-getData()
+getData() */
 
 module.exports = pool
